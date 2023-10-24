@@ -26,7 +26,7 @@ The link will take 20-30 seconds to open.
 
 ### Local Install
 
-1). Clone the directory - ```git clone "Copied URL" 
+1). Clone the directory - ```git clone "Copied URL" ```
 
 2). Install all libraries from requirements.txt file - ```pip install -r requirements.txt```
 
