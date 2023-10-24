@@ -28,15 +28,17 @@ The link will take 20-30 seconds to open.
 
 1). Clone the directory - ```git clone "Copied URL" 
 
-2). Within the app folder, inside config.py file, comment out DATABASE_URL and uncomment everything else in the class Settings.
+2). Install all libraries from requirements.txt file - ```pip install -r requirements.txt```
 
-3). Again within the app folder, inside database.py, comment out DATABASE_URL and add this line
+3). Within the app folder, inside config.py file, comment out DATABASE_URL and uncomment everything else in the class Settings.
+
+4). Again within the app folder, inside database.py, comment out DATABASE_URL and add this line
 
 ```
 DATABASE_URL = f'postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}'
 ```
 
-4). Create an env file in the folder and add this data inside the file with the credentials for your postgres database.
+5). Create an env file in the folder and add this data inside the file with the credentials for your postgres database.
 
 ```
 DATABASE_HOSTNAME=
@@ -46,7 +48,7 @@ DATABASE_NAME=
 DATABASE_USERNAME=
 ```
 
-5). When all the things are finished run the webapp using this command
+6). When all the things are finished run the webapp using this command
 
 ```
 uvicorn app.main:app --reload
